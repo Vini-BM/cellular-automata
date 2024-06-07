@@ -1,2 +1,2 @@
-# game-of-life
-Implementation of John Conway's 'Game of Life' cellular automaton.
+# cellular-automata
+Simple simulations of different cellular automata.
