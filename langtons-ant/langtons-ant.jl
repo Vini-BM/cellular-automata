@@ -157,9 +157,10 @@ end # module
 
 import .Ant
 function main()
-    n = 100
-    m = 100
-    sys = Ant.System{Int64,Ant.BouncingBoundary}(n,m,Ant.BouncingBoundary())
+    n = 20
+    m = 10
+    boundary = Ant.PeriodicBoundary()
+    sys = Ant.System{Int64,Ant.PeriodicBoundary}(n,m,boundary)
     for i in 1:1000
         Ant.animate!(sys,i)
         Ant.step!(sys)
